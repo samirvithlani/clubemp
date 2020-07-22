@@ -1,14 +1,3 @@
-app component
-<h1>EMPLOYEE NAME :- {{employeeName}}</h1>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
 
-<ul *ngFor="let emp of employee">
-
-    <div *ngIf ="emp.salary >= 10000">
-        <li>name -> {{emp.name}}</li>
-        <li>email -> {{emp.email}}</li>
-        <li>salary -> {{emp.salary}}</li>
-        <li>isActive -> {{emp.status}}</li>
-    </div>
-
-
-</ul>
