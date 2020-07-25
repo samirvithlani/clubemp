@@ -1,0 +1,5 @@
+<p>httpemployee works!</p>
+<button type="button" (click)="addEmployee()">ADD EMPLOYEE</button>
+<ul *ngFor= "let emp of employee">
+    <li>{{emp.eId}} &nbsp;&nbsp; - {{emp.eName}} &nbsp;&nbsp; - {{emp.eEmail}}</li>
+</ul>

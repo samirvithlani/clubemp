@@ -13,7 +13,8 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     this.menuArray = [
       { link: 'emp', title: 'employee componnent' },
-      {link:'empdetail',title:'employeeDetail'}
+      {link:'empdetail',title:'employeeDetail'},
+      {link:'httpemployee',title:'httpemployee'}
     ]
 
   }
