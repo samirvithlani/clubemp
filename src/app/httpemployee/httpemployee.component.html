@@ -1,5 +1,10 @@
 <p>httpemployee works!</p>
 <button type="button" (click)="addEmployee()">ADD EMPLOYEE</button>
 <ul *ngFor= "let emp of employee">
-    <li>{{emp.eId}} &nbsp;&nbsp; - {{emp.eName}} &nbsp;&nbsp; - {{emp.eEmail}}</li>
+    <li><a [routerLink]="['/empdetail',emp.eId]">{{emp.eName}}</a>
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" (click)="delete(emp.eId)">DELETE</button>
+        <button type="button" (click)="update(emp.eId)">update</button>
+    </li>
+   
 </ul>

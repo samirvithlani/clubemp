@@ -14,7 +14,8 @@ export class MenuComponent implements OnInit {
     this.menuArray = [
       { link: 'emp', title: 'employee componnent' },
       {link:'empdetail',title:'employeeDetail'},
-      {link:'httpemployee',title:'httpemployee'}
+      {link:'httpemployee',title:'httpemployee'},
+      {link:'dummy',title:'dummy'},
     ]
 
   }
