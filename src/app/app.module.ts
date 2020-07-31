@@ -8,7 +8,8 @@ import { MenuComponent } from './menu/menu.component';
 import { EmpDetailComponent } from './emp-detail/emp-detail.component';
 import { HttpemployeeComponent } from './httpemployee/httpemployee.component';
 import { DummyComponent } from './dummy/dummy.component';
-
+import {  ReactiveFormsModule,FormsModule} from "@angular/forms";
+import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,12 +17,14 @@ import { DummyComponent } from './dummy/dummy.component';
     MenuComponent,
     EmpDetailComponent,
     HttpemployeeComponent,
-    DummyComponent
+    DummyComponent,
+    EmployeeRegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
     
     
   ],

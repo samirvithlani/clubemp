@@ -16,6 +16,7 @@ export class MenuComponent implements OnInit {
       {link:'empdetail',title:'employeeDetail'},
       {link:'httpemployee',title:'httpemployee'},
       {link:'dummy',title:'dummy'},
+      {link:'empreg',title:'Employee Registration'},
     ]
 
   }
