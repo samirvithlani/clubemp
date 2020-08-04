@@ -10,6 +10,12 @@ import { HttpemployeeComponent } from './httpemployee/httpemployee.component';
 import { DummyComponent } from './dummy/dummy.component';
 import {  ReactiveFormsModule,FormsModule} from "@angular/forms";
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import {MenuItem} from 'primeng/api';     
+import {ToastModule} from 'primeng/toast';
+import {TableModule} from 'primeng/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +30,11 @@ import { EmployeeRegistrationComponent } from './employee-registration/employee-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    ToastModule,
+    TableModule
     
     
   ],

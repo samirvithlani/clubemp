@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Employee } from '../employee';
+import {MessageService} from 'primeng/api';
+import {TableModule} from 'primeng/table';
 
 @Component({
   selector: 'app-httpemployee',
   templateUrl: './httpemployee.component.html',
-  styleUrls: ['./httpemployee.component.css']
+  styleUrls: ['./httpemployee.component.css'],
+  providers: [MessageService]
 })
 export class HttpemployeeComponent implements OnInit {
 
-  constructor(private service: DataService) { }
+  constructor(private service: DataService,private messageService:MessageService) { }
+  showSuccess() {
+    this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+}
   employee: Array<Employee> = [];
   employee1: Employee;
   resStatus: number;
@@ -23,8 +29,10 @@ export class HttpemployeeComponent implements OnInit {
     console.log(eId)
     this.service.deleteemp(eId).subscribe(res=>{
 
+      this.messageService.add({severity:'warn', summary: 'warn', detail: 'deleted...'});
       if(res==1){
         console.log("data deleted")
+
 
         this.service.getEmployee().subscribe(res => {
 
@@ -77,5 +85,8 @@ export class HttpemployeeComponent implements OnInit {
     })
 
   }
+
+
+
 
 }
