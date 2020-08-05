@@ -19,6 +19,12 @@ export class DataService {
     console.log(model)
     return this.http.post('http://localhost:8080/employee/addEmployee', model)
   }
+  
+  addEmployee1(model): Promise<any> {
+
+    console.log(model)
+    return this.http.post('http://localhost:8080/employee/addEmployee', model).toPromise()
+  }
 
   viewById(eId): Observable<any> {
 

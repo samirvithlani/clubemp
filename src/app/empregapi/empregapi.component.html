@@ -1,0 +1,18 @@
+status -->{{status}}
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+
+    
+
+    EMPLOYEE NAME:-<input type="text" formControlName="eName">
+    <br>
+    EMPLOYEE Email:-<input type="text" formControlName="eEmail">
+    <br>
+    EMPLOYEE Password:-<input type="text" formControlName="ePassword">
+    <br>
+    EMPLOYEE Salary:-<input type="text" formControlName="eSalary">
+    <br>
+    EMPLOYEE Age:-<input type="text" formControlName="eAge">
+    <br>
+    <button type="submit">submit</button>
+
+</form>

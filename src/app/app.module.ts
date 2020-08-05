@@ -15,7 +15,9 @@ import {AccordionModule} from 'primeng/accordion';     //accordion and accordion
 import {MenuItem} from 'primeng/api';     
 import {ToastModule} from 'primeng/toast';
 import {TableModule} from 'primeng/table';
-
+import { EmpregapiComponent } from './empregapi/empregapi.component';
+import {ChartModule} from 'primeng/chart';
+import { BarchartComponent } from './barchart/barchart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import {TableModule} from 'primeng/table';
     EmpDetailComponent,
     HttpemployeeComponent,
     DummyComponent,
-    EmployeeRegistrationComponent
+    EmployeeRegistrationComponent,
+    EmpregapiComponent,
+    BarchartComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import {TableModule} from 'primeng/table';
     BrowserModule,
     BrowserAnimationsModule,
     ToastModule,
-    TableModule
+    TableModule,
+    ChartModule
     
     
   ],
