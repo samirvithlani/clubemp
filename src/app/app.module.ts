@@ -18,6 +18,10 @@ import {TableModule} from 'primeng/table';
 import { EmpregapiComponent } from './empregapi/empregapi.component';
 import {ChartModule} from 'primeng/chart';
 import { BarchartComponent } from './barchart/barchart.component';
+import { FormsDemoComponent } from './forms-demo/forms-demo.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MenubarModule} from 'primeng/menubar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,8 @@ import { BarchartComponent } from './barchart/barchart.component';
     DummyComponent,
     EmployeeRegistrationComponent,
     EmpregapiComponent,
-    BarchartComponent
+    BarchartComponent,
+    FormsDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,11 @@ import { BarchartComponent } from './barchart/barchart.component';
     BrowserAnimationsModule,
     ToastModule,
     TableModule,
-    ChartModule
+    ChartModule,
+    MatRadioModule,
+    MatFormFieldModule,
+    FormsModule,
+    MenubarModule
     
     
   ],

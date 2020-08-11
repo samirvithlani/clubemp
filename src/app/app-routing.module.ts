@@ -7,6 +7,7 @@ import { DummyComponent } from './dummy/dummy.component';
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 import { EmpregapiComponent } from './empregapi/empregapi.component';
 import { BarchartComponent } from './barchart/barchart.component';
+import { FormsDemoComponent } from './forms-demo/forms-demo.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'dummy', component:DummyComponent },
   {path:'empreg',component:EmployeeRegistrationComponent},
   {path:'empregapi',component:EmpregapiComponent},
+  {path:'formsdemo',component:FormsDemoComponent},
   {path:'barchart',component:BarchartComponent}
 ];
 

@@ -30,7 +30,7 @@ export class EmployeeRegistrationComponent implements OnInit {
     this.myForm =new FormGroup({
        employee_name :new FormControl('',Validators.required),
        employee_email:new FormControl('') 
-
+        
       
     })
   }
