@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
   constructor() { }
   menuArray: Array<any> = [];
   ngOnInit(): void {
-    /* this.menuArray = [
+     this.menuArray = [
       {link: 'emp', title: 'employee componnent' },
       {link:'empdetail',title:'employeeDetail'},
       {link:'httpemployee',title:'httpemployee'},
@@ -22,24 +22,10 @@ export class MenuComponent implements OnInit {
       {link:'empregapi',title:'Employee Registration API'},
       {link:'barchart',title:'barchart'},
       {link:'formsdemo',title:'FormsDemo'},
-    ] */
+      {link:'parent',title:'parent'},
+    ] 
 
-    this.items = [
-      {
-          label: 'employee',
-          items: [{
-                  label: 'New', 
-                  icon: 'pi pi-fw pi-plus',
-                  items: [
-                      {label: 'Project'},
-                      {label: 'Other'},
-                  ]
-              },
-              {label: 'Open'},
-              {label: 'Quit'}
-          ]
-      },
-    ];
+    ;
   }
 
 

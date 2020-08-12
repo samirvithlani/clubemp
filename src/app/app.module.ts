@@ -22,6 +22,11 @@ import { FormsDemoComponent } from './forms-demo/forms-demo.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MenubarModule} from 'primeng/menubar';
+import { ParentComponent } from './parent/parent.component';
+import { Child1Component } from './parent/child1/child1.component';
+import { Child2Component } from './child2/child2.component';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +38,10 @@ import {MenubarModule} from 'primeng/menubar';
     EmployeeRegistrationComponent,
     EmpregapiComponent,
     BarchartComponent,
-    FormsDemoComponent
+    FormsDemoComponent,
+    ParentComponent,
+    Child1Component,
+    Child2Component
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,9 @@ import {MenubarModule} from 'primeng/menubar';
     MatRadioModule,
     MatFormFieldModule,
     FormsModule,
-    MenubarModule
+    MenubarModule,
+    LoadingBarRouterModule,
+    LoadingBarModule
     
     
   ],

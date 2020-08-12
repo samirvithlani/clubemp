@@ -8,6 +8,9 @@ import { EmployeeRegistrationComponent } from './employee-registration/employee-
 import { EmpregapiComponent } from './empregapi/empregapi.component';
 import { BarchartComponent } from './barchart/barchart.component';
 import { FormsDemoComponent } from './forms-demo/forms-demo.component';
+import { ParentComponent } from './parent/parent.component';
+import { Child1Component } from './parent/child1/child1.component';
+import { Child2Component } from './child2/child2.component';
 
 
 const routes: Routes = [
@@ -18,7 +21,12 @@ const routes: Routes = [
   {path:'empreg',component:EmployeeRegistrationComponent},
   {path:'empregapi',component:EmpregapiComponent},
   {path:'formsdemo',component:FormsDemoComponent},
-  {path:'barchart',component:BarchartComponent}
+  {path:'barchart',component:BarchartComponent},
+  {path:'parent',component:ParentComponent,children:[
+    {path:"child1",component:Child1Component},
+    {path:"child2",component:Child2Component},
+  ]}
+
 ];
 
 @NgModule({
