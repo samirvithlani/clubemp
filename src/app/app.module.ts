@@ -27,6 +27,16 @@ import { Child1Component } from './parent/child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+
+import { SocialLoginModule, SocialAuthServiceConfig, SocialAuthService } from 'angularx-social-login';
+import {
+  GoogleLoginProvider,
+  FacebookLoginProvider,
+  AmazonLoginProvider,
+} from 'angularx-social-login';
+import { SocialloginComponent } from './sociallogin/sociallogin.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +51,8 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     FormsDemoComponent,
     ParentComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    SocialloginComponent
   ],
   imports: [
     BrowserModule,
@@ -58,11 +69,30 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
     FormsModule,
     MenubarModule,
     LoadingBarRouterModule,
-    LoadingBarModule
+    LoadingBarModule,
+    SocialLoginModule
     
     
+    
+  ], providers: [
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: FacebookLoginProvider.PROVIDER_ID,
+            provider: new FacebookLoginProvider('1953004328166658'),
+          },
+          {
+            id:GoogleLoginProvider.PROVIDER_ID,
+            provider:new GoogleLoginProvider('')
+          }
+
+        ],
+      } as SocialAuthServiceConfig,
+    }
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

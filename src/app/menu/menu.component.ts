@@ -23,6 +23,7 @@ export class MenuComponent implements OnInit {
       {link:'barchart',title:'barchart'},
       {link:'formsdemo',title:'FormsDemo'},
       {link:'parent',title:'parent'},
+      {link:'login',title:'login'},
     ] 
 
     ;
